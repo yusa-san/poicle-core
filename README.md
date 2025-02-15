@@ -40,6 +40,14 @@ SMTP_PASSWORD=yyyyyyyyyyyyyyyy
 SENDER_EMAIL=poicle@example.com
 ```
 
+また、Webアプリ側に`client/.env`として時刻表データをBuTTERにより変換したファイルの配置パス、GTFS-RTのパスを配置します。
+
+```
+VITE_MAIN_API_ENDPOINT=[API Gatewayにより発行されるURL]
+VITE_BUTTER_API_BASE_URL=[BuTTERにより変換したGTFSファイルのエンドポイント]
+VITE_R_API_BASE_URL=[GTFS-RTのリバースプロキシのエンドポイント]
+```
+
 ## デプロイ
 
 1. AWSアカウントとリージョンを設定します。
